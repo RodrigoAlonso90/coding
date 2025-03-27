@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+**** Autor: Rodrigo Rodriguez
+**** Version: 1.0
+**** Date: 27/03/2025
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRGIL PESTLE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VIRGIL</h1>
+        <h2>PESTLE Analysis</h2>
+    <div id="main-container"> <!-- Sección que contiene los botones -->
+        <button class="circle-button" onclick="showInfo('Political')"><span>P</span><br><span>Political</span></button>
+        <button class="circle-button" onclick="showInfo('Economic')"><span>E</span><br><span>Economic</span></button>
+        <button class="circle-button" onclick="showInfo('Social')"><span>S</span><br><span>Social</span></button>
+        <button class="circle-button" onclick="showInfo('Technological')"><span>T</span><br><span>Technological</button>
+        <button class="circle-button" onclick="showInfo('Legal')"><span>L</span><br><span>Legal</span></button>
+        <button class="circle-button" onclick="showInfo('Environmental')"><span>E</span><br><span>Environmental</span></button>
+    </div>
+    <div id="info-container" style="display: none;"> <!-- Sección con la infromación detallada -->
+        <button id="back-button" onclick="goBack()">Retrun</button>
+        <div id="info-content"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
